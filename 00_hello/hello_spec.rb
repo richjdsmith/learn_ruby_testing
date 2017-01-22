@@ -1,4 +1,4 @@
-# # Hello!
+cd# # Hello!
 #
 # This lab teaches basic Ruby function syntax.
 #

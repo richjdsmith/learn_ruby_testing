@@ -1,1 +1,3 @@
-#write your code here
+def Hello
+    return "Yo"
+end
