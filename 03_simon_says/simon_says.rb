@@ -26,13 +26,14 @@ def first_word(string)
     
 end
 
-def title( word )
-  small_words = %w[on the and]
-  word.split(' ').map.with_index do |w, i|
-    unless (small_words.include? w) and (i > 0)
-      w.capitalize
+def titleize(string)
+  words = string.split.map do |word|
+    if %w(the and over).include?(word)
+      word
     else
-      w
+      word.capitalize
     end
-  end.join(' ')
+  end
+  words.first.capitalize!
+  words.join(" ")
 end
